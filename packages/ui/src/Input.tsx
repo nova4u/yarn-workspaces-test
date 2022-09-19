@@ -2,7 +2,7 @@ import React, { FC } from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
 
-const Input: FC<Partial<InputProps>> = ({ ...props }) => {
+const Input: FC<InputProps> = ({ ...props }) => {
   return (
     <input
       {...props}
