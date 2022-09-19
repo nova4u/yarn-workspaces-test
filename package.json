@@ -1,0 +1,15 @@
+{
+  "name": "@dmrk/yarn-workspaces-test",
+  "version": "1.0.0",
+  "private": true,
+  "main": "index.js",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @dmrk/code-generator dev\" \" yarn workspace @dmrk/ui dev\"",
+    "build": "yarn workspace @dmrk/ui build && yarn workspace @dmrk/code-generator build"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "@dmrk/config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
